@@ -89,9 +89,9 @@ class HashRing(object):
         return '%d' % (binascii.crc32(v) & 0xffffffff)
 
     def _md5(self, key):
-        """Given a string key it returns a long value,
-        this long value represents a place on the hash ring.
-        md5 is currently used because it mixes well.
+        """
+        Generates the md5 hash of the v.
+        @return: str, the str value for the md5 of the v
         """
         m = md5.new()
         m.update(key)
