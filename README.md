@@ -16,6 +16,8 @@
 >  * 一致性哈希部分：  node_key = crc32(node_id + node_name)
 <br>
 
+一致性哈希实现部分，参考 https://github.com/JustinTulloss/consistentkeys/blob/master/hashring.py
+
 #### 用法
 
 ```shell
