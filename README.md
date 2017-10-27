@@ -21,3 +21,7 @@
 ```shell
 　　python graph_rrd.py  endpoint0/counter0  endpoint1/counter1 ...
 ```
+
+#### 输出
+
+![image](https://github.com/gujifly/graph_rrd_finder/blob/master/graph_rrd.png)
