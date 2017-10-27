@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 import binascii
-import md5
+import hashlib
 import sys
 
 class HashRing(object):
@@ -93,8 +93,8 @@ class HashRing(object):
         Generates the md5 hash of the v.
         @return: str, the str value for the md5 of the v
         """
-        m = md5.new()
-        m.update(key)
+        m = hashlib.md5()
+        m.update(b'%s'%(key))
         return m.hexdigest()
 
 def usage():
